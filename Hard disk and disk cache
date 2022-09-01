@@ -1,0 +1,26 @@
+Hard Disk:
+=========
+A hard disk is part of a unit, often called a "disk drive," "hard drive," or "hard disk drive," that stores and 
+provides relatively quick access to large amounts of data on an electromagnetically charged surface or set 
+of surfaces. Today's computers typically come with a hard disk that contains several billion bytes 
+(gigabytes) of storage. 
+A hard disk is really a set of stacked "disks," each of which, like phonograph records, has data recorded 
+electromagnetically in concentric circles or "tracks" on the disk. A "head" (something like a phonograph 
+arm but in a relatively fixed position) records (writes) or reads the information on the tracks. Two heads, 
+one on each side of a disk, read or write the data as the disk spins. Each read or write operation requires 
+that data be located, which is an operation called a "seek." (Data already in a disk cache, however, will be 
+located more quickly.) 
+A hard disk/drive unit comes with a set rotation speed varying from 4500 to 7200 rpm. Disk access time is 
+measured in milliseconds. Although the physical location can be identified with cylinder, track, and 
+sector locations, these are actually mapped to a logical block address (LBA) that works with the larger 
+address range on today's hard disks.
+
+==============================================================================
+
+Disk Cache:
+==========
+A disk cache is a mechanism for improving the time it takes to read from or write to a hard disk. Today, 
+the disk cache is usually included as part of the hard disk. A disk cache can also be a specified portion of 
+random access memory (RAM). 
+The disk cache holds data that has recently been read and, in some cases, adjacent data areas that are 
+likely to be accessed next. Write caching is also provided with some disk caches. 
