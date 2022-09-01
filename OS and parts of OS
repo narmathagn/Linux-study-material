@@ -1,0 +1,75 @@
+Operating system:
+================
+An operating system or OS is a software program that enables the computer hardware to communicate 
+and operate with the computer software. Without a computer operating system, a computer and software 
+programs would be useless. 
+An operating system (sometimes abbreviated as "OS") is the program that, after being initially loaded into 
+the computer by a boot program, manages all the other programs in a computer. The other programs are 
+called applications or application programs. The application programs make use of the operating system 
+by making requests for services through a defined application program interface (API). In addition, users 
+can interact directly with the operating system through a user interface such as a command language or a 
+graphical user interface (GUI).
+An operating system performs these services for applications:
+ In a multitasking operating system where multiple programs can be running at the same time, 
+the operating system determines which applications should run in what order and how much 
+time should be allowed for each application before giving another application a turn.
+ It manages the sharing of internal memory among multiple applications.
+ It handles input and output to and from attached hardware devices, such as hard disks, printers, 
+and dial-up ports. 
+ It sends messages to each application or interactive user (or to a system operator) about the status 
+of operation and any errors that may have occurred.
+ It can offload the management of what are called batch jobs (for example, printing) so that the 
+initiating application is freed from this work.
+ On computers that can provide parallel processing, an operating system can manage how to 
+divide the program so that it runs on more than one processor at a time.
+Examples of computer operating systems
+ Redhat – Very popular Linux operating system from Redhat 
+ Microsoft Windows - PC and IBM compatible operating system. Microsoft Windows is the most 
+commonly found and used operating system in PCs
+ Apple MacOS - Apple computer operating system. The only Apple computer operating system.
+ Ubuntu Linux - A popular variant of Linux used with PC and IBM compatible computers.
+ Google Android - operating system used with Android compatible phones.
+ iOS - Operating system used with the Apple iPhone.
+==================================================================================================
+Various Parts of an Operating System:
+=====================================
+UNIX and 'UNIX-like' operating systems (such as Linux) consist of a kernel and some system programs. 
+There are also some application programs for doing work. The kernel is the heart of the operating system. 
+In fact, it is often mistakenly considered to be the operating system itself, but it is not. An operating 
+system provides many more services than a plain kernel.
+It keeps track of files on the disk, starts programs and runs them concurrently, assigns memory and other 
+resources to various processes, receives packets from and sends packets to the network, and so on. The 
+kernel does very little by itself, but it provides tools with which all services can be built. It also prevents 
+anyone from accessing the hardware directly, forcing everyone to use the tools it provides. This way the 
+kernel provides some protection for users from each other. The tools provided by the kernel are used via 
+system calls. 
+The system programs use the tools provided by the kernel to implement the various services required 
+from an operating system. System programs, and all other programs, run `on top of the kernel', in what is 
+called the user mode. The difference between system and application programs is one of intent: 
+applications are intended for getting useful things done (or for playing, if it happens to be a game), 
+whereas system programs are needed to get the system working. A word processor is an application; 
+mount is a system program. The difference is often somewhat blurry, however, and is important only to 
+compulsive categorizers.
+An operating system can also contain compilers and their corresponding libraries (GCC and the C library 
+in particular under Linux), although not all programming languages need be part of the operating 
+system. Documentation, and sometimes even games, can also be part of it. 
+Important parts of the kernel
+The Linux kernel consists of several important parts: 
+ Process management
+ Memory management
+ Hardware device drivers
+ Filesystem drivers
+ Network management
+ Various other bits and pieces
+The following figure shows some of the more important parts of the Linux kernel
+Probably the most important parts of the kernel (nothing else works without them) are memory 
+management and process management. Memory management takes care of assigning memory areas and 
+swap space areas to processes, parts of the kernel, and for the buffer cache. Process management creates 
+processes, and implements multitasking by switching the active process on the processor.
+At the lowest level, the kernel contains a hardware device driver for each kind of hardware it supports. 
+Since the world is full of different kinds of hardware, the number of hardware device drivers is large. 
+There are often many otherwise similar pieces of hardware that differ in how they are controlled by 
+software. The similarities make it possible to have general classes of drivers that support similar 
+operations; each member of the class has the same interface to the rest of the kernel but differs in what it 
+needs to do to implement them. For example, all disk drivers look alike to the rest of the kernel, i.e., they 
+all have operations like `initialize the drive', `read sector N', and `write sector N'.
